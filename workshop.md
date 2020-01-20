@@ -33,6 +33,20 @@ Switch projects (CTRL-R)
 Code browsing (`CTRL-P`, files , `CTRL-T`, symbol navigation)
 `CTRL-SHIFT-P` "select linter"
 
+### Practical code navigation
+
+Find the class RandomForestRegressor in skl in two different ways
+- from the commande line using `git grep "class RandomForestRegressor"` (-i case insensitive, without class all occurrences) 
+- CTRL-T RandomForestRegressor (disable jedi if it doesn't work) in VScode
+
+Find example files that mention the word Forest in different ways:
+- CTRL P "example forest" in Vscode
+- go to https://github.com/scikit-learn/scikit-learn in a browser then press `t` then type "example/forest"
+
+Navigate back to the RandomForesClassifier or Regressor from the plot_forest_iris.py example clicking on the class name in 
+github or by ctrl-clicking on the class name in VScode
+
+
 ###  installing C/C++ compilers to be able to build native extensions
 
 
