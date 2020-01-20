@@ -27,10 +27,11 @@ https://learngitbranching.js.org/?NODEMO
 
 ### VS Code
 Install main et plugins
+activate environment before launching
 Open project folders (skl numpy) CTRL-K CTRL-O 
 Switch projects (CTRL-R) 
-Code browsing (CTRL-P, files , CTRL-T, symbol navigation)
-
+Code browsing (`CTRL-P`, files , `CTRL-T`, symbol navigation)
+`CTRL-SHIFT-P` "select linter"
 
 ###  installing C/C++ compilers to be able to build native extensions
 
