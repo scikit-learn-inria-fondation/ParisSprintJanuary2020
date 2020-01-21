@@ -25,7 +25,7 @@ https://learngitbranching.js.org/?NODEMO
 - initialize the conda command in git bash (Windows only): open "Git Bash" and type
 
   ```
-  ./Miniconda3/Scripts/conda init
+  ./Miniconda3/Scripts/conda init bash
   ```
 
   then close the "Git Bash" window and start a new one to type:
