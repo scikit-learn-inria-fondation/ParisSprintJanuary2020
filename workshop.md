@@ -104,9 +104,37 @@ python examples/inspection/plot_permutation_importance.py
 ctrl P "plot permutation importance"
 shift ctrl P "Run Current File in Python Interactive Window"
 
+## pytest
+```
+conda install pytest
+```
 
-    tutorial on how to use pytest to run the tests of a specific module
-    presentation of the github collaborative workflow (pull requests and code reviews)
-    what is continuous integration and how to read the CI reports and what are the main CI configuration files
+Each sklearn subpackage comes with a `tests` folder that gathers the test files related to it.
+Use VSCode to open the source code for the RandomForestClassifier class
+Question: what is the path of this file?
+Can you find the folder that holds the test for RandomForestClassifier in the VSCode file explorer?
+Can you find the test folder in the command line?
+Can you locate the file `test_forest.py` in that folder using the `ls` command.
+
+```
+pytest --verbose test_forest.py
+```
+
+Edit the source code of RandomForestClassifier to change the predict method always return 0.
+Rerun the test: what do you observe? 
+
+```
+pytest -vlx test_forest.py
+```
+
+## github collaborative workflow (pull requests and code reviews)
+
+- branching locally from your master
+- push as a new branch to your fork
+blabla
+
+## what is continuous integration and how to read the CI reports and what are the main CI configuration files
+
+
     building the documentation with sphinx and sphinx gallery
     optional: quick intro to Cython
