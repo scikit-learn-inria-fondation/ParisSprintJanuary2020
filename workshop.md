@@ -10,7 +10,7 @@ Please start now the [VS buildtools for Windows](https://visualstudio.microsoft.
 ### conda
 
 - miniconda installation
-- create an environment (sklworkshop)
+- create an environment (`sklworkshop`)
 - version listing and package listing
 - activate and deactivate environments
 
@@ -29,10 +29,16 @@ https://learngitbranching.js.org/
 https://learngitbranching.js.org/?NODEMO
 
 ### VS Code
-Install main et plugins
-activate environment before launching
+
+Install VSCode and its Python extension
+
+activate `sklworkshop` environment before launching
+or shift ctrl p "select python interprerter" and choose "sklworkshop"
+
 Open project folders (skl numpy) CTRL-K CTRL-O 
+
 Switch projects (CTRL-R) 
+
 Code browsing (`CTRL-P`, files , `CTRL-T`, symbol navigation)
 `CTRL-SHIFT-P` "select linter"
 
@@ -45,12 +51,11 @@ Find example files that mention the word "importance" in different ways:
 Navigate to the RandomForestClassifier or Regressor from the `plot_permutation_importance.py` example clicking on the class name in
 github or by ctrl-clicking on the class name in VScode
 
-
 Find the class KMeans in skl in two different ways
 - from the commande line using `git grep "class KMeans"` (-i case insensitive, without class all occurrences) 
 - CTRL-T KMeans (disable jedi if it doesn't work) in VScode
 
-###  installing C/C++ compilers to be able to build native extensions
+### installing C/C++ compilers to be able to build native extensions
 
 See instructions for your OS in the [installation guide](https://scikit-learn.org/stable/developers/advanced_installation.html#building-from-source).
 - [Windows](https://scikit-learn.org/stable/developers/advanced_installation.html#windows)
@@ -58,7 +63,8 @@ See instructions for your OS in the [installation guide](https://scikit-learn.or
 - [Linux](https://scikit-learn.org/stable/developers/advanced_installation.html#linux)
 
 
-## building the master branch of scikit-learn, numpy...
+## building the master branch of numpy and scikit-learn
+
 ```
 cd numpy
 pip install -e .
