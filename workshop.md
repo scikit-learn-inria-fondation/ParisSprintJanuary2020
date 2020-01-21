@@ -7,17 +7,6 @@ Please start now the [VS buildtools for Windows](https://visualstudio.microsoft.
 
 ## installing a Python dev environment with
 
-### conda
-
-- miniconda installation
-- create an environment (`sklworkshop`)
-- version listing and package listing
-- activate and deactivate environments
-
-### github
-
-- where the sources are (numpy, skl, pandas)
-- skl fork
 
 ### git
 
@@ -27,6 +16,41 @@ Please start now the [VS buildtools for Windows](https://visualstudio.microsoft.
 - git remote configuration
 https://learngitbranching.js.org/
 https://learngitbranching.js.org/?NODEMO
+
+### conda
+
+#### Install miniconda
+
+- miniconda installation (latest Python 3 version)
+- initialize the conda command in git bash (Windows only): open "Git Bash" and type
+
+  ```
+  ./Miniconda3/Scripts/conda init
+  ```
+
+  then close the "Git Bash" window and start a new one to type:
+  
+  ```
+  conda info
+  ```
+  or
+  
+  ```
+  which conda
+  ```
+  to check that the conda command is in your PATH and useable from the "Git Bash"
+  terminal.
+
+#### conda environments
+
+- create an environment (`sklworkshop`)
+- version listing and package listing
+- activate and deactivate environments
+
+### github
+
+- where the sources are (numpy, skl, pandas)
+- skl fork
 
 ### VS Code
 
