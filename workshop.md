@@ -2,12 +2,15 @@
 
 (from 9.30AM to 6PM)
 
+Please start now the [VS buildtools for Windows](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) if you have not already. Do not install it.
+
+
 ## installing a Python dev environment with
 
 ### conda
 
 - miniconda installation
-- create an environment
+- create an environment (sklworkshop)
 - version listing and package listing
 - activate and deactivate environments
 
@@ -18,7 +21,7 @@
 
 ### git
 
-- install
+- install (git bash for [Windows](https://git-scm.com/download/win))
 - git clone numpy
 - git clone fork sklearn
 - git remote configuration
@@ -35,25 +38,67 @@ Code browsing (`CTRL-P`, files , `CTRL-T`, symbol navigation)
 
 ### Practical code navigation
 
-Find the class RandomForestRegressor in skl in two different ways
-- from the commande line using `git grep "class RandomForestRegressor"` (-i case insensitive, without class all occurrences) 
-- CTRL-T RandomForestRegressor (disable jedi if it doesn't work) in VScode
+Find example files that mention the word "importance" in different ways:
+- CTRL P "example importance" in Vscode and open `plot_permutation_importance.py`
+- go to https://github.com/scikit-learn/scikit-learn in a browser then press `t` then type "example/importance"
 
-Find example files that mention the word Forest in different ways:
-- CTRL P "example forest" in Vscode
-- go to https://github.com/scikit-learn/scikit-learn in a browser then press `t` then type "example/forest"
-
-Navigate back to the RandomForesClassifier or Regressor from the plot_forest_iris.py example clicking on the class name in 
+Navigate to the RandomForestClassifier or Regressor from the `plot_permutation_importance.py` example clicking on the class name in
 github or by ctrl-clicking on the class name in VScode
 
 
+Find the class KMeans in skl in two different ways
+- from the commande line using `git grep "class KMeans"` (-i case insensitive, without class all occurrences) 
+- CTRL-T KMeans (disable jedi if it doesn't work) in VScode
+
 ###  installing C/C++ compilers to be able to build native extensions
 
+See instructions for your OS in the [installation guide](https://scikit-learn.org/stable/developers/advanced_installation.html#building-from-source).
+- [Windows](https://scikit-learn.org/stable/developers/advanced_installation.html#windows)
+- [macOS](https://scikit-learn.org/stable/developers/advanced_installation.html#macos)
+- [Linux](https://scikit-learn.org/stable/developers/advanced_installation.html#linux)
 
 
+## building the master branch of scikit-learn, numpy...
+```
+cd numpy
+pip install -e .
+cd ..
+pip show numpy
+conda install ipython
+ipython
+>>> import numpy as np
+>>> print(np.__version__)
+1.19.0.dev0+xxxxx
+CTRL-D
+```
+
+```
+cd scikit-learn
+pip install -e .
+cd ..
+pip show scikit-learn
+ipython
+>>> import sklearn
+>>> print(sklearn.__version__)
+0.23.dev0
+CTRL-D
+```
+
+## Run a scikit-learn example
+`plot_permutation_importance.py`
+### from the command line
+```
+cd scikit-learn
+ls examples
+ls examples/inspection
+python examples/inspection/plot_permutation_importance.py
+```
+
+### from VScode
+ctrl P "plot permutation importance"
+shift ctrl P "Run Current File in Python Interactive Window"
 
 
-    cloning and building the master branch of scikit-learn, pandas, numpy...
     tutorial on how to use pytest to run the tests of a specific module
     presentation of the github collaborative workflow (pull requests and code reviews)
     what is continuous integration and how to read the CI reports and what are the main CI configuration files
