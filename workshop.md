@@ -2,20 +2,34 @@
 
 (from 9.30AM to 6PM)
 
-Please start now the [VS buildtools for Windows](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) if you have not already. Do not install it.
+**Welcome!**
 
+If you have not already downloaded them, please start now to download
+[VS buildtools for Windows](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools).
+Do not install it, we will do it together later.
 
-## installing a Python dev environment with
+## installing a Python dev environment
 
+### git and github
 
-### git
+- [git installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+(git bash for [Windows](https://git-scm.com/download/win)): git is a versioning system.
+- [github](https://github.com) is where the sources are.
 
-- install (git bash for [Windows](https://git-scm.com/download/win))
 - git clone numpy
-- git clone fork sklearn
+```
+git clone https://github.com/numpy/numpy.git
+```
+- fork scikit-learn on github then git clone your fork
+```
+git clone https://github.com/<myuser>/scikit-learn
+```
 - git remote configuration
-https://learngitbranching.js.org/
-https://learngitbranching.js.org/?NODEMO
+```
+git remote -v
+...
+git remote add upstream https://github.com/scikit-learn/scikit-learn.git
+```
 
 ### conda
 
@@ -46,11 +60,6 @@ https://learngitbranching.js.org/?NODEMO
 - create an environment (`sklworkshop`)
 - version listing and package listing
 - activate and deactivate environments
-
-### github
-
-- where the sources are (numpy, skl, pandas)
-- skl fork
 
 ### VS Code
 
@@ -152,6 +161,9 @@ pytest -vlx test_forest.py
 ```
 
 ## github collaborative workflow (pull requests and code reviews)
+
+https://learngitbranching.js.org/
+https://learngitbranching.js.org/?NODEMO
 
 - branching locally from your master
 - push as a new branch to your fork
