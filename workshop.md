@@ -18,17 +18,17 @@ Do not install it, we will do it together later.
 
 - git clone numpy
 ```
-git clone https://github.com/numpy/numpy.git
+$ git clone https://github.com/numpy/numpy.git
 ```
 - fork scikit-learn on github then git clone your fork
 ```
-git clone https://github.com/<myuser>/scikit-learn
+$ git clone https://github.com/<myuser>/scikit-learn
 ```
 - git remote configuration
 ```
-git remote -v
+$ git remote -v
 ...
-git remote add upstream https://github.com/scikit-learn/scikit-learn.git
+$ git remote add upstream https://github.com/scikit-learn/scikit-learn.git
 ```
 
 ### conda
@@ -37,30 +37,43 @@ git remote add upstream https://github.com/scikit-learn/scikit-learn.git
 
 - [miniconda](https://docs.conda.io/en/latest/miniconda.html)
 [installation](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) (latest Python3 version)
-- initialize the conda command in git bash (Windows only): open "Git Bash" and type
-
+- initialize the conda command in git bash
+  - Windows: open "Git Bash" and type
   ```
-  ./Miniconda3/Scripts/conda init bash
+  $ ./Miniconda3/Scripts/conda init bash
   ```
-
-  then close the "Git Bash" window and start a new one to type:
+  - Linux:
+  ```
+  $ conda init bash
+  ```
+- then close your shell and start a new one to type:
   
   ```
-  conda info
+  $ conda info
   ```
   or
   
   ```
-  which conda
+  $ which conda
   ```
-  to check that the conda command is in your PATH and useable from the "Git Bash"
-  terminal.
+  to check that the conda command is in your PATH and useable from your shell.
 
 #### conda environments
 
 - create an environment (`sklworkshop`)
-- version listing and package listing
+```
+$ conda create --name sklworkshop
+```
 - activate and deactivate environments
+```
+$ conda activate sklworkshop
+(sklworkshop)$ conda deactivate
+```
+- version listing and package listing
+```
+$ conda --version
+$ conda list
+```
 
 ### VS Code
 
