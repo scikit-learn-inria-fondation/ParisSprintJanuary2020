@@ -35,7 +35,8 @@ git remote add upstream https://github.com/scikit-learn/scikit-learn.git
 
 #### Install miniconda
 
-- miniconda installation (latest Python 3 version)
+- [miniconda](https://docs.conda.io/en/latest/miniconda.html)
+[installation](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) (latest Python3 version)
 - initialize the conda command in git bash (Windows only): open "Git Bash" and type
 
   ```
