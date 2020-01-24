@@ -89,14 +89,15 @@ Install the Python extension
 In order to work with VSCode in your Python environment
 - `Ctrl+Shift+P` then "select python interpreter" and choose "sklworkshop"
 
-Open project folders (numpy, scikit-learn)
-- `Ctrl-k Ctrl-o` 
+Open project folders (numpy, scikit-learn): `Ctrl-k Ctrl-o` 
 
-Switch projects (CTRL-R) 
+Switch between projects: `Ctrl-r`
 
-Code browsing (`CTRL-P`, files , `CTRL-T`, symbol navigation)
+Browse the code:
+- by files `Ctrl-p`
+- by symbols `Ctrl-t`
 
-At some moment VSCode will complain about not finding a linter: scikit-learn uses `flake8`
+At some point VSCode will complain about not finding a linter: scikit-learn uses `flake8`
 - Install `flake8` in your conda environment
 ```
 $ conda activate sklworkshop
