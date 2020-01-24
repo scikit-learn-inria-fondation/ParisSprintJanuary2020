@@ -101,7 +101,7 @@ At some point VSCode will complain about not finding a linter: scikit-learn uses
 - Install `flake8` in your conda environment
 ```
 $ conda activate sklworkshop
-$ (sklworkshop) conda install flake8
+(sklworkshop)$ conda install flake8
 ```
 - Select `flake8` as a linter in VSCode: `CTRL-SHIFT-P` "select linter"
 
