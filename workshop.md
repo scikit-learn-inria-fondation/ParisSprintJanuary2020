@@ -80,7 +80,7 @@ $ conda list
 Install VSCode following your
 [system instructions](https://code.visualstudio.com/docs/setup/setup-overview#_cross-platform).
 
-Launch VSCode and configure [Telemetry settings](https://code.visualstudio.com/docs/getstarted/telemetry)
+Launch VSCode and configure [Telemetry settings](https://code.visualstudio.com/docs/getstarted/telemetry).
 
 Install the Python extension
 - `Ctrl+Shift+X` open the extension manager
