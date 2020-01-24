@@ -77,17 +77,32 @@ $ conda list
 
 ### VS Code
 
-Install VSCode and its Python extension
+Install VSCode following your
+[system instructions](https://code.visualstudio.com/docs/setup/setup-overview#_cross-platform).
 
-activate `sklworkshop` environment before launching
-or shift ctrl p "select python interprerter" and choose "sklworkshop"
+Launch VSCode and configure [Telemetry settings](https://code.visualstudio.com/docs/getstarted/telemetry)
 
-Open project folders (skl numpy) CTRL-K CTRL-O 
+Install the Python extension
+- `Ctrl+Shift+X` open the extension manager
+- search for the python extension: install
+
+In order to work with VSCode in your Python environment
+- `Ctrl+Shift+P` then "select python interpreter" and choose "sklworkshop"
+
+Open project folders (numpy, scikit-learn)
+- `Ctrl-k Ctrl-o` 
 
 Switch projects (CTRL-R) 
 
 Code browsing (`CTRL-P`, files , `CTRL-T`, symbol navigation)
-`CTRL-SHIFT-P` "select linter"
+
+At some moment VSCode will complain about not finding a linter: scikit-learn uses `flake8`
+- Install `flake8` in your conda environment
+```
+$ conda activate sklworkshop
+$ (sklworkshop) conda install flake8
+```
+- Select `flake8` as a linter in VSCode: `CTRL-SHIFT-P` "select linter"
 
 ### Practical code navigation
 
