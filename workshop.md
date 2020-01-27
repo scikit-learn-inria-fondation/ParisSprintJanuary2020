@@ -217,9 +217,13 @@ $ git checkout my-awesome-branch
 ```
 $ git push origin my-awesome-branch
 ```
+- From the github interface open a Pull Request (PR) to your master
 
-## what is continuous integration and how to read the CI reports and what are the main CI configuration files
+## Continuous Integration
 
+- From the github interface open a PR to 
+  - https://github.com/cmarmo/scikit-learn or
+  - https://github.com/ogrisel/scikit-learn
 
-    building the documentation with sphinx and sphinx gallery
+## Building the documentation with sphinx and sphinx gallery
     optional: quick intro to Cython
