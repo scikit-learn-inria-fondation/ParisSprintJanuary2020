@@ -144,6 +144,11 @@ $ ipython
 CTRL-D
 ```
 
+Unlike numpy, scikit-learn does not list cython as a build dependency in a way understandable by pip yet. We need to install it manually first:
+```
+conda install cython
+```
+
 ```
 $ cd scikit-learn
 $ pip install -e .
