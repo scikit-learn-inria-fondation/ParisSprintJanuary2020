@@ -16,20 +16,30 @@ Do not install it, we will do it together later.
 (git bash for [Windows](https://git-scm.com/download/win)): git is a versioning system.
 - [github](https://github.com) is a platform to work collaboratively on the source code of hosted Open Source projects such as scikit-learn and NumPy.
 
-- git clone numpy
-```
-$ git clone https://github.com/numpy/numpy.git
-```
-- fork scikit-learn on github then git clone your fork
-```
-$ git clone https://github.com/<myuser>/scikit-learn
-```
-- git remote configuration
-```
-$ git remote -v
-...
-$ git remote add upstream https://github.com/scikit-learn/scikit-learn.git
-```
+- Clone numpy with git:
+  ```
+  $ git clone https://github.com/numpy/numpy.git
+  ```
+- Fork scikit-learn on github then clone your fork with git:
+  ```
+  $ git clone https://github.com/<myuser>/scikit-learn
+  ```
+- Configure some aliases for the remote repositories:
+
+  List existing aliases:
+  ```
+  $ git remote -v
+  ```
+  
+  Add a new alias for your fork on github:
+  ```
+  $ git remote add upstream https://github.com/scikit-learn/scikit-learn.git
+  ```
+  
+  Check that your new alias has been properly configured:
+  ```
+  $ git remote -v
+  ```
 
 ### conda
 
