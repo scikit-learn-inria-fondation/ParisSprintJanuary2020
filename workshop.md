@@ -257,7 +257,7 @@ $ pytest -vl -k test_rf_regressor_prediction_range \
 ```
 
 Bonus exercise: try to modify the code of scikit-learn to make your new test
-fail by making it predicts very large or very small values.
+fail by making it predict very large or very small values.
 
 ## Collaborative workflow via github (pull requests and code reviews)
 
