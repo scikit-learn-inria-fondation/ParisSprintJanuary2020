@@ -167,21 +167,24 @@ python examples/inspection/plot_permutation_importance.py
 ```
 
 ### from VScode
-ctrl P "plot permutation importance"
-shift ctrl P "Run Current File in Python Interactive Window"
+`ctrl-p` "plot permutation importance" then
+`Ctrl-Shift-P` "Run Current File in Python Interactive Window"
 
-## pytest
+## Run tests with pytest
 ```
 conda install pytest
 ```
 
 Each sklearn subpackage comes with a `tests` folder that gathers the test files related to it.
-Use VSCode to open the source code for the RandomForestClassifier class
-Question: what is the path of this file?
-Can you find the folder that holds the test for RandomForestClassifier in the VSCode file explorer?
-Can you find the test folder in the command line?
-Can you locate the file `test_forest.py` in that folder using the `ls` command.
 
+Use VSCode to open the source code for the RandomForestClassifier class.
+
+- What is the path of this file?
+- Can you find the folder that holds the test for RandomForestClassifier in the VSCode file explorer?
+- Can you find the test folder in the command line?
+- Can you locate the file `test_forest.py` in that folder using the `ls` command?
+
+To run the test
 ```
 pytest --verbose test_forest.py
 ```
@@ -193,7 +196,9 @@ Rerun the test: what do you observe?
 pytest -vlx test_forest.py
 ```
 
-## github collaborative workflow (pull requests and code reviews)
+## Collaborative workflow via github (pull requests and code reviews)
+
+What does branching mean?
 
 https://learngitbranching.js.org/
 https://learngitbranching.js.org/?NODEMO
