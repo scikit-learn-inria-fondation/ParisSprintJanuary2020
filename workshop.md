@@ -5,7 +5,7 @@
 **Welcome!**
 
 If you have not already downloaded them, please start now to download
-[VS buildtools for Windows](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools).
+[Visual Studio Build Tools for Windows](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools). Note that we do not need the full Visual Studio download (only the command line build tools).
 Do not install it, we will do it together later.
 
 ## installing a Python dev environment
@@ -14,7 +14,7 @@ Do not install it, we will do it together later.
 
 - [git installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 (git bash for [Windows](https://git-scm.com/download/win)): git is a versioning system.
-- [github](https://github.com) is where the sources are.
+- [github](https://github.com) is a platform to work collaboratively on the source code of hosted Open Source projects such as scikit-learn and NumPy.
 
 - git clone numpy
 ```
