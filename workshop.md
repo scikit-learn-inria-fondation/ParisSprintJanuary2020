@@ -5,7 +5,7 @@
 **Welcome!**
 
 If you have not already downloaded them, please start now to download
-[VS buildtools for Windows](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools).
+[Visual Studio Build Tools for Windows](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools). Note that we do not need the full Visual Studio download (only the command line build tools).
 Do not install it, we will do it together later.
 
 ## installing a Python dev environment
@@ -14,7 +14,7 @@ Do not install it, we will do it together later.
 
 - [git installation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 (git bash for [Windows](https://git-scm.com/download/win)): git is a versioning system.
-- [github](https://github.com) is where the sources are.
+- [github](https://github.com) is a platform to work collaboratively on the source code of hosted Open Source projects such as scikit-learn and NumPy.
 
 - git clone numpy
 ```
@@ -144,7 +144,9 @@ $ ipython
 CTRL-D
 ```
 
+Unlike numpy, scikit-learn does not list cython as a build dependency in a way understandable by pip yet. We need to install it manually first.
 ```
+$ conda install cython
 $ cd scikit-learn
 $ pip install -e .
 $ cd ..
@@ -276,11 +278,20 @@ $ git status
 $ git checkout my-awesome-branch
 ```
 - Make your modifications and commit
-- Push the new branch to your fork
+
+- Check that the remote repository named `origin` points to your
+  own github fork:
+```
+git remote --verbose
+```
+
+- Push the new branch to your fork:
 ```
 $ git push origin my-awesome-branch
 ```
-- From the github interface open a Pull Request (PR) to your master
+- From the github interface open a Pull Request (PR) to the `master`
+  branch of your own scikit-learn fork. **Please do not open the PR to the
+  scikit-learn/scikit-learn main repository!**
 
 ## Continuous Integration
 
@@ -288,7 +299,7 @@ $ git push origin my-awesome-branch
   - https://github.com/cmarmo/scikit-learn or
   - https://github.com/ogrisel/scikit-learn
 
-**Please, do not submit the PR to scikit-learn/scikit-learn!!**
+**Again, please do not submit the PR to scikit-learn/scikit-learn!**
 
 
 ## Building the documentation with sphinx and sphinx gallery
