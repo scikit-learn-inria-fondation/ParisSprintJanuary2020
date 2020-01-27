@@ -135,8 +135,8 @@ $ cd numpy
 $ pip install -e .
 $ cd ..
 $ pip show numpy
-conda install ipython
-ipython
+$ conda install ipython
+$ ipython
 >>> import numpy as np
 >>> print(np.__version__)
 1.19.0.dev0+xxxxx
@@ -144,11 +144,11 @@ CTRL-D
 ```
 
 ```
-cd scikit-learn
-pip install -e .
-cd ..
-pip show scikit-learn
-ipython
+$ cd scikit-learn
+$ pip install -e .
+$ cd ..
+$ pip show scikit-learn
+$ ipython
 >>> import sklearn
 >>> print(sklearn.__version__)
 0.23.dev0
@@ -207,10 +207,17 @@ https://learngitbranching.js.org/?NODEMO
 - Create a new branch locally from your master
 ```
 $ cd scikit-learn
-
+$ git status
+$ git branch my-awesome-branch
+$ git status
+$ git checkout my-awesome-branch
 ```
-- push as a new branch to your fork
-blabla
+Make your modifications and commit
+
+- Push the new branch to your fork
+```
+$ git push origin my-awesome-branch
+```
 
 ## what is continuous integration and how to read the CI reports and what are the main CI configuration files
 
