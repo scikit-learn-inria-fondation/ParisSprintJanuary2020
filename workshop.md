@@ -228,4 +228,5 @@ $ git push origin my-awesome-branch
 
 
 ## Building the documentation with sphinx and sphinx gallery
-    optional: quick intro to Cython
+
+Check the documentation [here](https://scikit-learn.org/stable/developers/contributing.html#documentation)
