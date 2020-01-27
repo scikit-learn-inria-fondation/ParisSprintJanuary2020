@@ -103,22 +103,24 @@ At some point VSCode will complain about not finding a linter: scikit-learn uses
 $ conda activate sklworkshop
 (sklworkshop)$ conda install flake8
 ```
-- Select `flake8` as a linter in VSCode: `CTRL-SHIFT-P` "select linter"
+- Select `flake8` as a linter in VSCode: `Ctrl-Shift-P` "select linter"
 
 ### Practical code navigation
 
 Find example files that mention the word "importance" in different ways:
-- CTRL P "example importance" in Vscode and open `plot_permutation_importance.py`
-- go to https://github.com/scikit-learn/scikit-learn in a browser then press `t` then type "example/importance"
+- VSCode: `Ctrl-p` "example importance" and open `plot_permutation_importance.py`
+- Github: go to https://github.com/scikit-learn/scikit-learn in your browser, press `t` and type "example/importance"
 
-Navigate to the RandomForestClassifier or Regressor from the `plot_permutation_importance.py` example clicking on the class name in
-github or by ctrl-clicking on the class name in VScode
+Navigate to the RandomForestClassifier or Regressor from the `plot_permutation_importance.py` example:
+- VSCode: ctrl-clicking on the class name
+- github: clicking on the class name
 
-Find the class KMeans in skl in two different ways
-- from the commande line using `git grep "class KMeans"` (-i case insensitive, without class all occurrences) 
-- CTRL-T KMeans (disable jedi if it doesn't work) in VScode
+Find the class KMeans in scikit-learn in two different ways:
+- from the command line: using `git grep "class KMeans"` (-i case insensitive, note that without "class" you will find
+all occurrences) 
+- VSCode: `Ctrl-t` KMeans (disable the jedi extension if it doesn't work)
 
-### installing C/C++ compilers to be able to build native extensions
+### Installing C/C++ compilers to be able to build native extensions
 
 See instructions for your OS in the [installation guide](https://scikit-learn.org/stable/developers/advanced_installation.html#building-from-source).
 - [Windows](https://scikit-learn.org/stable/developers/advanced_installation.html#windows)
@@ -126,7 +128,7 @@ See instructions for your OS in the [installation guide](https://scikit-learn.or
 - [Linux](https://scikit-learn.org/stable/developers/advanced_installation.html#linux)
 
 
-## building the master branch of numpy and scikit-learn
+## Building the master branch of numpy and scikit-learn
 
 ```
 cd numpy
@@ -155,6 +157,7 @@ CTRL-D
 
 ## Run a scikit-learn example
 `plot_permutation_importance.py`
+
 ### from the command line
 ```
 cd scikit-learn
