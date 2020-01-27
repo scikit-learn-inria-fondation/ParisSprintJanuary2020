@@ -69,9 +69,10 @@ $ conda create --name sklworkshop
 $ conda activate sklworkshop
 (sklworkshop)$ conda deactivate
 ```
-- version listing and package listing
+- version, environment and package listing
 ```
 $ conda --version
+$ conda env list
 $ conda list
 ```
 
