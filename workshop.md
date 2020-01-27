@@ -233,6 +233,11 @@ The goal of this new test will be to check that a `RandomForestRegressor`
 never predicts numerical values outside of the range of values observed in
 the training set.
 
+The test will use a training set generated at random by [sampling from that
+Normal distribution](https://docs.scipy.org/doc/numpy/reference/random/generated/numpy.random.mtrand.RandomState.normal.html?highlight=normal#numpy.random.mtrand.RandomState.normal).
+
+For a test we can use a small dataset, for instance 100 samples and 10 features.
+
 Here is a code template to get started:
 
 ```python
