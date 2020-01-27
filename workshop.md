@@ -249,7 +249,7 @@ def test_rf_regressor_prediction_range():
 ```
 
 After each TODO, check that your code works as expected by running only
-your the test function with the following command:
+your test function with the following command:
 
 ```
 $ pytest -vl -k test_rf_regressor_prediction_range \
