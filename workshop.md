@@ -180,21 +180,29 @@ Each sklearn subpackage comes with a `tests` folder that gathers the test files 
 Use VSCode to open the source code for the RandomForestClassifier class.
 
 - What is the path of this file?
-- Can you find the folder that holds the test for RandomForestClassifier in the VSCode file explorer?
-- Can you find the test folder in the command line?
-- Can you locate the file `test_forest.py` in that folder using the `ls` command?
+- Can you find the folder that holds the tests for RandomForestClassifier in the VSCode file explorer?
+- Can you find the test folder and list its content using the `ls` command?
+- Locate the file `test_forest.py` in that folder.
 
 To run the test
 ```
-$ pytest --verbose test_forest.py
+$ pytest --verbose ./<path_to_test_folder>/test_forest.py
 ```
 
 Edit the source code of RandomForestClassifier to change the predict method always return 0.
 Rerun the test: what do you observe? 
 
+alternatively you can use the `vlx` flags as follows:
 ```
-$ pytest -vlx test_forest.py
+$ pytest -vlx ./<path_to_test_folder>/test_forest.py
 ```
+Find out about the meaning of those flags with
+```
+$ pytest --help
+```
+
+## Write a new test of your own
+
 
 ## Collaborative workflow via github (pull requests and code reviews)
 
