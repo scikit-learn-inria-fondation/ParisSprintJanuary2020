@@ -131,10 +131,10 @@ See instructions for your OS in the [installation guide](https://scikit-learn.or
 ## Building the master branch of numpy and scikit-learn
 
 ```
-cd numpy
-pip install -e .
-cd ..
-pip show numpy
+$ cd numpy
+$ pip install -e .
+$ cd ..
+$ pip show numpy
 conda install ipython
 ipython
 >>> import numpy as np
@@ -160,10 +160,10 @@ CTRL-D
 
 ### from the command line
 ```
-cd scikit-learn
-ls examples
-ls examples/inspection
-python examples/inspection/plot_permutation_importance.py
+$ cd scikit-learn
+$ ls examples
+$ ls examples/inspection
+$ python examples/inspection/plot_permutation_importance.py
 ```
 
 ### from VScode
@@ -172,7 +172,7 @@ python examples/inspection/plot_permutation_importance.py
 
 ## Run tests with pytest
 ```
-conda install pytest
+$ conda install pytest
 ```
 
 Each sklearn subpackage comes with a `tests` folder that gathers the test files related to it.
@@ -186,14 +186,14 @@ Use VSCode to open the source code for the RandomForestClassifier class.
 
 To run the test
 ```
-pytest --verbose test_forest.py
+$ pytest --verbose test_forest.py
 ```
 
 Edit the source code of RandomForestClassifier to change the predict method always return 0.
 Rerun the test: what do you observe? 
 
 ```
-pytest -vlx test_forest.py
+$ pytest -vlx test_forest.py
 ```
 
 ## Collaborative workflow via github (pull requests and code reviews)
@@ -201,9 +201,14 @@ pytest -vlx test_forest.py
 What does branching mean?
 
 https://learngitbranching.js.org/
+
 https://learngitbranching.js.org/?NODEMO
 
-- branching locally from your master
+- Create a new branch locally from your master
+```
+$ cd scikit-learn
+
+```
 - push as a new branch to your fork
 blabla
 
