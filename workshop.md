@@ -222,11 +222,20 @@ $ git status
 $ git checkout my-awesome-branch
 ```
 - Make your modifications and commit
-- Push the new branch to your fork
+
+- Check that the remote repository named `origin` points to your
+  own github fork:
+```
+git remote --verbose
+```
+
+- Push the new branch to your fork:
 ```
 $ git push origin my-awesome-branch
 ```
-- From the github interface open a Pull Request (PR) to your master
+- From the github interface open a Pull Request (PR) to the `master`
+  branch of your own scikit-learn fork. **Please do not open the PR to the
+  scikit-learn/scikit-learn main repository!**
 
 ## Continuous Integration
 
@@ -234,9 +243,7 @@ $ git push origin my-awesome-branch
   - https://github.com/cmarmo/scikit-learn or
   - https://github.com/ogrisel/scikit-learn
 
-**Please, do not submit the PR to scikit-learn/scikit-learn!!**
-
-
+**Again, please do not submit the PR to scikit-learn/scikit-learn!**
 
 ## Building the documentation with sphinx and sphinx gallery
 
