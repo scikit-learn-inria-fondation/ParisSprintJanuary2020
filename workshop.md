@@ -169,6 +169,15 @@ $ ls examples/inspection
 $ python examples/inspection/plot_permutation_importance.py
 ```
 
+Hint: at any moment use the `pwd` command to find where you are. `pwd` stands
+for "Path to Working Directory". For instance here is a typical output one
+would get on a Linux machine:
+
+```
+$ pwd
+/home/ogrisel/code/scikit-learn
+```
+
 ### from VScode
 `ctrl-p` "plot permutation importance" then
 `Ctrl-Shift-P` "Run Current File in Python Interactive Window"
@@ -186,6 +195,8 @@ Use VSCode to open the source code for the RandomForestClassifier class.
 - Can you find the folder that holds the tests for RandomForestClassifier in the VSCode file explorer?
 - Can you find the test folder and list its content using the `ls` command?
 - Locate the file `test_forest.py` in that folder.
+
+Again use the `pwd` command if you are lost.
 
 To run the test
 ```
@@ -206,6 +217,49 @@ $ pytest --help
 
 ## Write a new test of your own
 
+We will now do an exercise to add a new test function named `test_rf_regressor_prediction_range` in the `test_forest.py` file.
+
+The goal of this new test will be to check that a `RandomForestRegressor`
+never predicts numerical values outside of the range of values observed in
+the training set.
+
+Here is a code template to get started:
+
+```python
+def test_rf_regressor_prediction_range():
+    # Create a Random Number Generator with 42 as a fixed seed.
+    rng = np.random.RandomState(42)
+
+    # TODO: define the n_samples and n_features variables
+    X_train = rng.normal(size=(n_samples, n_features))
+    y_train = rng.normal(size=n_samples)
+
+    rfr = RandomForestRegressor(random_state=42)
+    rfr.fit(X_train, y_train)
+
+    # TODO: np.min() and np.max() to measure the minimum and
+    # maximum values of the training set target values y_train.
+
+    # TODO: generate some random data X_test with the same number
+    # of features.
+
+    # TODO: compute the model predictions on the test data:
+    # rfr.predict(X_test) and store the results in a variable y_preds.
+
+    # TODO: check that all the values in y_preds lie between the minimum
+    # and maximum values of y_train.
+```
+
+After each TODO, check that your code works as expected by running only
+your test function with the following command:
+
+```
+$ pytest -vl -k test_rf_regressor_prediction_range \
+     ./<path_to_test_folder>/test_forest.py
+```
+
+Bonus exercise: try to modify the code of scikit-learn to make your new test
+fail by making it predict very large or very small values.
 
 ## Collaborative workflow via github (pull requests and code reviews)
 
@@ -246,6 +300,7 @@ $ git push origin my-awesome-branch
   - https://github.com/ogrisel/scikit-learn
 
 **Again, please do not submit the PR to scikit-learn/scikit-learn!**
+
 
 ## Building the documentation with sphinx and sphinx gallery
 
