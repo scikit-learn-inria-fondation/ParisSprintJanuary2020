@@ -227,6 +227,8 @@ $ git push origin my-awesome-branch
 
 **Please, do not submit the PR to scikit-learn/scikit-learn!!**
 
+
+
 ## Building the documentation with sphinx and sphinx gallery
 
 Check the documentation [here](https://scikit-learn.org/stable/developers/contributing.html#documentation)
