@@ -212,8 +212,7 @@ $ git branch my-awesome-branch
 $ git status
 $ git checkout my-awesome-branch
 ```
-Make your modifications and commit
-
+- Make your modifications and commit
 - Push the new branch to your fork
 ```
 $ git push origin my-awesome-branch
