@@ -225,5 +225,7 @@ $ git push origin my-awesome-branch
   - https://github.com/cmarmo/scikit-learn or
   - https://github.com/ogrisel/scikit-learn
 
+
+
 ## Building the documentation with sphinx and sphinx gallery
     optional: quick intro to Cython
