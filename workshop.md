@@ -102,9 +102,11 @@ Open project folder for numpy: `Ctrl-k Ctrl-o`
 Open a Python file from the project: `setup.py`.
 
 In order to work with VSCode in your Python environment
-- `Ctrl+Shift+P` then "select python interpreter" and choose "sklworkshop"
+- `Ctrl+Shift+P` then "python select interpreter" and choose "sklworkshop"
 
-Open project folder for scikit-learn: `Ctrl-k Ctrl-o` 
+Open project folder for scikit-learn: `Ctrl-k Ctrl-o`
+
+Activate the "sklworkshop" Python interpreter for the scikit-learn project.
 
 Switch between projects: `Ctrl-r`
 
