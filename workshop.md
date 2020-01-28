@@ -97,10 +97,14 @@ Install the Python extension
 - `Ctrl+Shift+X` open the extension manager
 - search for the python extension: install
 
+Open project folder for numpy: `Ctrl-k Ctrl-o` 
+
+Open a Python file from the project: `setup.py`.
+
 In order to work with VSCode in your Python environment
 - `Ctrl+Shift+P` then "select python interpreter" and choose "sklworkshop"
 
-Open project folders (numpy, scikit-learn): `Ctrl-k Ctrl-o` 
+Open project folder for scikit-learn: `Ctrl-k Ctrl-o` 
 
 Switch between projects: `Ctrl-r`
 
